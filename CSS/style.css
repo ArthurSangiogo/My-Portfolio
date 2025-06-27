@@ -1,0 +1,35 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(255, 255, 255);
+    background-color:rgba(255, 66, 66, 0.603);
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding-top: 70px; /* Adjust padding to account for fixed header height */
+    margin: 0;
+}
+
+
+
+button {
+    width: 150px;
+    margin: 10px 0;
+    padding: 10px 15px; /* Added horizontal padding */
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Lighter border for inputs */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent background */
+    color: rgb(255, 249, 158);
+    cursor: pointer;
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+input {
+    padding: 5px;
+    margin: 5px;
+}
+button:hover {
+    background-color: rgba(255, 160, 160, 0.686);
+}
+
+
