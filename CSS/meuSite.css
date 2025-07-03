@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+
+
+
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: #5b718d;
+    color: #333;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+
+
+
+.menu{
+    background-color: #1F2937;
+    display: flex;
+    width: 700px;
+    height: 60px;
+    justify-content: center;
+    position: fixed;
+    border-radius: 40px;
+    z-index: 1000;
+}
+.menu-item{
+    display: flex ;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px 20px;
+}
+.menu-item a{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: floralwhite;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.menu-item a:hover{
+    color: #fbbf24;
+}
+
+
+
+
+.menu-item i{
+    font-size: 24px;
+}
+.menu-item p{
+    font-size: 18px;
+}
+.main-column {
+    display: flex; /* Transforma este container em um Flexbox */
+    /* max-width: 1400px; /* Defina uma largura máxima para o conteúdo, se desejar */
+    /* margin: 0 auto; /* Centraliza o container principal na página */
+    padding-top: 100px; /* MUITO IMPORTANTE: Empurra o conteúdo PARA BAIXO do menu fixo */
+    padding-left: 40px; /* Adiciona o padding da esquerda aqui, em vez de margin na coluna */
+    padding-right: 40px; /* Adiciona padding à direita para manter o espaçamento */
+    box-sizing: border-box; /* Garante que padding não adicione à largura total */
+}
+.column-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo da coluna */
+    background-color: #1F2937;
+    border-radius: 30px;
+    width: 250px; /* Largura fixa para a coluna da esquerda */
+    height: 670px;
+    /* REMOVIDO: margin-top e margin-left que estavam aqui, o padding-top do main-column já cuida */
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    flex-shrink: 0; /* Impede que esta coluna encolha */
+}
+.myself{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 16px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+
+.inter{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+/* Coluna do Centro (column-center) */
+.column-center {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que esta coluna ocupe o espaço restante */
+    margin-left: 40px; /* Espaço entre a coluna esquerda e a central */
+    margin-right: 40px; /* Espaço entre a coluna central e a direita */
+    gap: 20px; /* Espaço entre os elementos .text e .foto-estadio */
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    border-radius: 30px;
+    color: #fbbf24;
+    font-size: 20px;
+    font-weight: 500;
+    /* REMOVIDO: margin-top negativo e margin-left fixo */
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    width: auto; /* Deixe automático ou 100% para preencher a largura da coluna */
+    height: auto; /* Deixe automático para se ajustar ao conteúdo */
+}
+
+
+.foto-estadio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    border-radius: 30px;
+    width: auto; /* Deixe automático ou 100% para preencher a largura da coluna */
+    /* REMOVIDO: margin-top e margin-left fixos */
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+
+.gif{
+    display: block;
+    width: 700px; /* Mantenha a largura original, ou ajuste para 100% se quiser que ocupe a coluna */
+    height: 400px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-top: 20px;
+}
+.column-right {
+    display: flex;
+    flex-direction: column; /* Para alinhar a música abaixo de outros elementos se houver */
+    justify-content: flex-start; /* Alinha o conteúdo da coluna ao topo */
+    align-items: flex-end; /* ALINHA O CONTEÚDO (A MÚSICA) PARA A DIREITA DENTRO DESTA COLUNA */
+    flex-shrink: 0; /* Impede que esta coluna encolha */
+    width: auto; /* Deixe automático ou defina uma largura para a coluna se precisar */
+}
+.music{
+    display: flex; /* Mantenha para alinhar o iframe dentro */
+    /* REMOVIDO: position: absolute; e margin-top negativo */
+    /* margin-left: auto; - pode não ser necessário se column-right tiver justify-content: flex-end */
+    background-color: #1F2937;
+    border-radius: 20px;
+    width: 530px; /* Largura do player Spotify */
+    padding: 10px; /* Adicione um padding interno para o iframe */
+    box-sizing: border-box; /* Garante que padding não adicione à largura total */
+}
+
+
+.music iframe {
+    width: 100% !important; /* Faz o iframe preencher 100% da largura da div .music */
+    height: 152px !important; /* Mantém a altura definida para o player do Spotify */
+    display: block; /* Para garantir que se comporte bem no fluxo */
+}
+
+
+
+
+
