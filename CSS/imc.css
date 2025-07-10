@@ -2,8 +2,6 @@
 * {
     box-sizing: border-box;
 }
-
-
 header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background: rgb(49, 105, 190);
@@ -12,8 +10,6 @@ header {
     top: 0;
     z-index: 1000; /* Ensure header stays on top */
 }
-
-
 /* Flexbox for header content to space items */
 header,
 .navbar ul {
@@ -22,33 +18,23 @@ header,
     padding: 1rem;
     align-items: center; /* Vertically align items in the header */
 }
-
-
 .navbar ul {
     list-style: none; /* Remove bullet points from list */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
-
-
 .navbar ul li {
     margin-left: 1rem;
 }
-
-
 .navbar a {
     text-decoration: none; /* Remove underline from links */
     color: white; /* Set link color */
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
-
 .navbar a:hover {
     color: #ffd700; /* Gold color on hover for links */
 }
-
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
@@ -62,8 +48,6 @@ body {
     padding-top: 70px; /* Adjust padding to account for fixed header height */
     margin: 0;
 }
-
-
 .container,
 .preocupado { /* Apply common styles to both main blocks */
     background-color: rgb(49, 105, 190);
@@ -75,8 +59,6 @@ body {
     text-align: center;
     margin-bottom: 20px; /* Space between container and preocupado */
 }
-
-
 input,
 button {
     width: 100%;
@@ -88,12 +70,9 @@ button {
     background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
     color: white;
 }
-
-
 input::placeholder {
     color: rgba(255, 255, 255, 0.7); /* Placeholder text color */
 }
-
 button {
     background-color: rgba(0, 255, 255, 0.486);
     color: rgb(255, 255, 255);
@@ -103,13 +82,9 @@ button {
     transition: background-color 0.5s ease; /* Smooth transition for hover */
 
 }
-
-
 button:hover {
     background-color: rgba(0, 195, 255, 0.686);
 }
-
-
 #resultado {
     margin-top: 15px;
     font-weight: bold;

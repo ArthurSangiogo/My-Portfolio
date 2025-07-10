@@ -9,9 +9,6 @@ body {
     padding-top: 70px; /* Adjust padding to account for fixed header height */
     margin: 0;
 }
-
-
-
 button {
     width: 150px;
     margin: 10px 0;
