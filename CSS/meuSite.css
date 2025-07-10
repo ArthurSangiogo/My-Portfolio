@@ -4,11 +4,7 @@
 }
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-
-
 
 
 body{
@@ -21,8 +17,6 @@ header{
     justify-content: center;
     padding-top: 15px;
 }
-
-
 
 
 .menu{
@@ -52,13 +46,9 @@ header{
 }
 
 
-
-
 .menu-item a:hover{
     color: #fbbf24;
 }
-
-
 
 
 .menu-item i{
@@ -100,7 +90,6 @@ header{
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
-
 .inter{
     display: block;
     width: 300px;
@@ -133,7 +122,6 @@ header{
     height: auto; /* Deixe automático para se ajustar ao conteúdo */
 }
 
-
 .foto-estadio{
     display: flex;
     flex-direction: column;
@@ -146,7 +134,6 @@ header{
     padding: 40px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
-
 
 .gif{
     display: block;
@@ -170,20 +157,14 @@ header{
     /* REMOVIDO: position: absolute; e margin-top negativo */
     /* margin-left: auto; - pode não ser necessário se column-right tiver justify-content: flex-end */
     background-color: #1F2937;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 530px; /* Largura do player Spotify */
     padding: 10px; /* Adicione um padding interno para o iframe */
     box-sizing: border-box; /* Garante que padding não adicione à largura total */
 }
-
 
 .music iframe {
     width: 100% !important; /* Faz o iframe preencher 100% da largura da div .music */
     height: 152px !important; /* Mantém a altura definida para o player do Spotify */
     display: block; /* Para garantir que se comporte bem no fluxo */
 }
-
-
-
-
-
