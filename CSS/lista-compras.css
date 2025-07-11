@@ -1,8 +1,9 @@
 body {
     font-family: 'Comfortaa', cursive;
-    color: rgb(255, 255, 255);
-    background-color:rgba(255, 81, 0, 0.603);
-    display: flex; /* Use flexbox for layout */
+    color: #333;
+
+    background-color: #5b718d;
+        display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack children vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
